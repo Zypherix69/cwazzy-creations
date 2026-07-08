@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+    <title>Zugzwant - chess Traning</title>
+    <meta name="decription" content="Zugzwang is a chess training app that helps club players improve faster with daily tactics, opening practice, and simple breakdowns of their own games.">
+    <meta name="keywords" content="chess training app, chess tactics, chess openings, improve chess rating, chess game analysis ">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="chess.css">
+  </head>
+
+  <body>
+
+    <header id="header">
+        <nav id="nav-bar">
+            <a href="header" class="brand" aria-label="Zugzwang home">
+                <span class="brand-graph" area-hidden="true">&#9822;</span> Zugzwang
+            </a>
+            <ul class="nav-links">
+                <li class="nav-link" href="#header">Home</li>
+                <li class="nav-link" href="#method">The Method</li>
+                <li class="nav-link" href="#video">See It Work</li>
+                <li class="nav-link" href="#footer">Contact</li>
+            </ul> 
+            <a href="#form" class="nav-cta">Join Waitlist</a>
+        </nav>
+
+        <div class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <span class="eyebrow">For Players stuck around 1200-1800</span>
+                    <h1>Stop blundering.<br>Start understanding</h1>
+                    <p class="hero-sub">
+                      Zugzwang turns your last ten losses into your next twenty wins —daily tactics tuned to your rating, an opening repertoire you'll actually remember, and post-game breakdowns that explain the exact moment it went wrong.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#form" class="btn-primary">Join the waitlist</a>
+                        <a href="#video" class="link-quiet">Watch a demo</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-visual-frame">
+                        <img id="header-img" src="https://images.unsplash.com/photo-1528819622765-d6bcf132f793?fm=jpg&q=60&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0" alt="close-up of wooden chess pieces mid-game">
+                        <div class="hero-visual-caption">
+                            <span>Move 24</span>
+                            <span>White to play</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="move-ticker" aria-hidden="true">
+        <div class="move-ticker-track">
+            <span>1.e4 e5</span><span>2.Nf3 Nc6</span><span>3.Bb5 a6</span><span>4.Ba4 Nf6</span><span>5.O-O Be7</span><span>6.Re1 b5</span><span>7.Bb3 d6</span><span>8.c3 O-O</span>
+            <span>1.e4 e5</span><span>2.Nf3 Nc6</span><span>3.Bb5 a6</span><span>4.Ba4 Nf6</span><span>5.O-O Be7</span><span>6.Re1 b5</span><span>7.Bb3 d6</span><span>8.c3 O-O</span>
+        </div>
+    </div>
+    
+    <main>
+        <section id="method">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">The method</span>
+                    <h2>Three habits, built into one app</h2>
+                    <p>No lecture series. No 40-move engine lines to memorize. Just the three things that actually move your rating.</p>
+                </div>
+
+                <div class="features">
+                    <article class="feature-card">
+                        <span class="feature-move">Move 1</span>
+                        <h3>Daily Tactics</h3>
+                        <p>Bite-sized puzzle sets pulled from your own rating band, so every session sharpens one specific pattern instead of testing twenty you'll forget by dinner.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-move">Move 2</span>
+                        <h3>Opening Lab</h3>
+                        <p>Build a repertoire around three or four lines you'll actually play, then drill it against the replies your real opponents use most.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-move">Move 3</span>
+                        <h3>Game Autopsy</h3>
+                        <p>Upload your games and get a plain-language breakdown of the single moment the position turned — no engine jargon, just the idea you missed.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="video">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">See it in action</span>
+                    <h2>Three minutes, one blunder, and fix</h2>
+                    <p>A quick walkthrough of a real Game Autopsy session - from "I don't know what happened" to the exact square where it fell apart.</p>
+                </div>
+
+                <div class="demo-frame">
+                    <div class="demo-screen">
+                        <iframe id="video" src="https://www.youtube.com/embed/V6Ya1B2aOYk" title="Zugzwang demo: chess opening breakdown" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="demo-caption">
+                        <span>zugzwang / game-autopsy.mp4</span>
+                        <span>03:14</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="waitlist">
+            <div class="container">
+                <div class="scoresheet">
+                    <span class="eyebrow">Early access</span>
+                    <h2>Get on the board</h2>
+                    <P>We're opening the first cohort soon. Leave your emain and 'll send an invite before the seats fill up.</P>
+                    <form id="form" action="https://www.freecodecamp.org/email-submit" method="post">
+                        <label for="email" class="sr-only" style="position:absolute;left:-9999px;">Email address</label>
+                        <input id="email" name="email" type="email" placeholder="you@email.com" required>
+                        <input id="submit" type="submit" value="Reserve my seat">
+                    </form>
+                    <P class="form-note">No spam. One email when the first cohort opens - unsubscribe anytime.</P>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="container" footer-inner>
+            <a href="#header" class="brand" aria-label="Zugzwang home">
+                <span class="brand-glyph" aria-hidden="true">&#9822;</span> Zugzwang
+            </a>
+            <ul class="footer-links">
+                <li><a class="nav-link" href="#header">Home</a></li>
+                <li><a class="nav-link" href="#method">The Method</a></li>
+                <li><a class="nav-link" href="#video">Video</a></li>
+                <li><a class="nav-link" href="#waitlist">Join Waitlist</a></li>
+            </ul>
+            <p class="footer-fine">Built for players ho'd rather understand the middlegame than memorize it.</p>
+        </div>
+    </footer>
+
+  </body>
+
+</html>
