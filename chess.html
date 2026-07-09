@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
     <title>Zugzwant - chess Traning</title>
-    <meta name="decription" content="Zugzwang is a chess training app that helps club players improve faster with daily tactics, opening practice, and simple breakdowns of their own games.">
+    <meta name="description" content="Zugzwang is a chess training app that helps club players improve faster with daily tactics, opening practice, and simple breakdowns of their own games.">
     <meta name="keywords" content="chess training app, chess tactics, chess openings, improve chess rating, chess game analysis ">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="chess.css">
+
   </head>
 
   <body>
 
     <header id="header">
         <nav id="nav-bar">
-            <a href="header" class="brand" aria-label="Zugzwang home">
-                <span class="brand-graph" area-hidden="true">&#9822;</span> Zugzwang
+            <a href="#header" class="brand" aria-label="Zugzwang home">
+                <span class="brand-glyph" aria-hidden="true">&#9822;</span> Zugzwang
             </a>
             <ul class="nav-links">
-                <li class="nav-link" href="#header">Home</li>
-                <li class="nav-link" href="#method">The Method</li>
-                <li class="nav-link" href="#video">See It Work</li>
-                <li class="nav-link" href="#footer">Contact</li>
+                <li><a class="nav-link" href="#header">Home</a></li>
+                <li><a class="nav-link" href="#method">The method</a></li>
+                <li><a class="nav-link" href="#video">See It Work</a></li>
+                <li><a class="nav-link" href="#footer">Contact</a></li>
             </ul> 
             <a href="#form" class="nav-cta">Join Waitlist</a>
         </nav>
@@ -97,7 +98,7 @@
             <div class="container">
                 <div class="section-head">
                     <span class="eyebrow">See it in action</span>
-                    <h2>Three minutes, one blunder, and fix</h2>
+                    <h2>Watch a real blunder get fixed</h2>
                     <p>A quick walkthrough of a real Game Autopsy session - from "I don't know what happened" to the exact square where it fell apart.</p>
                 </div>
 
@@ -107,7 +108,7 @@
                     </div>
                     <div class="demo-caption">
                         <span>zugzwang / game-autopsy.mp4</span>
-                        <span>03:14</span>
+                        <span>38:33</span>
                     </div>
                 </div>
             </div>
@@ -118,8 +119,8 @@
                 <div class="scoresheet">
                     <span class="eyebrow">Early access</span>
                     <h2>Get on the board</h2>
-                    <P>We're opening the first cohort soon. Leave your emain and 'll send an invite before the seats fill up.</P>
-                    <form id="form" action="https://www.freecodecamp.org/email-submit" method="post">
+                    <P>We're opening the first cohort soon. Leave your email and we'll send an invite before the seats fill up.</P>
+                    <form id="form">
                         <label for="email" class="sr-only" style="position:absolute;left:-9999px;">Email address</label>
                         <input id="email" name="email" type="email" placeholder="you@email.com" required>
                         <input id="submit" type="submit" value="Reserve my seat">
@@ -132,19 +133,26 @@
     </main>
 
     <footer id="footer">
-        <div class="container" footer-inner>
-            <a href="#header" class="brand" aria-label="Zugzwang home">
-                <span class="brand-glyph" aria-hidden="true">&#9822;</span> Zugzwang
-            </a>
-            <ul class="footer-links">
-                <li><a class="nav-link" href="#header">Home</a></li>
-                <li><a class="nav-link" href="#method">The Method</a></li>
-                <li><a class="nav-link" href="#video">Video</a></li>
-                <li><a class="nav-link" href="#waitlist">Join Waitlist</a></li>
-            </ul>
-            <p class="footer-fine">Built for players ho'd rather understand the middlegame than memorize it.</p>
-        </div>
+    <div class="container footer-inner">
+        <a href="#header" class="brand" aria-label="Zugzwang home">
+            <span class="brand-glyph" aria-hidden="true">&#9822;</span> Zugzwang
+        </a>
+        <ul class="footer-links">
+            <li><a class="nav-link" href="#header">Home</a></li>
+            <li><a class="nav-link" href="#method">The Method</a></li>
+            <li><a class="nav-link" href="#video">See It Work</a></li>
+            <li><a class="nav-link" href="#waitlist">Join Waitlist</a></li>
+        </ul>
+        <p class="footer-fine">Built for players who'd rather understand the middlegame than memorize it.</p>
+    </div>
     </footer>
+
+    <script>
+    document.getElementById('form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert("This is a demo — clicking Reserve would normally send your email to our server to save your spot on the waitlist.");
+        });
+    </script>
 
   </body>
 
