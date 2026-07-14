@@ -1,13 +1,13 @@
   :root{
-    --ink:        #171310;   /* near-black warm charcoal — primary background */
-    --ink-soft:   #211b16;   /* slightly lifted panel background */
-    --walnut:     #4a3324;   /* dark chess square / secondary surface */
-    --parchment:  #ede6d6;   /* light square / primary text on dark */
-    --parchment-dim: #b9b0a0;/* muted body text on dark */
-    --brass:      #c39a52;   /* antique gold accent — links, borders, focus */
+    --ink:        #171310;  
+    --ink-soft:   #211b16;   
+    --walnut:     #4a3324;   
+    --parchment:  #ede6d6;   
+    --parchment-dim: #b9b0a0;
+    --brass:      #c39a52;  
     --brass-bright:#dcb46b;
-    --moss:       #6f8062;   /* "good move" accent, used sparingly */
-    --ember:      #a95943;   /* "blunder" accent, used sparingly */
+    --moss:       #6f8062;   
+    --ember:      #a95943;
 
     --font-display: "Fraunces", Georgia, serif;
     --font-body: "Inter", -apple-system, sans-serif;
@@ -152,7 +152,7 @@
     padding: 96px 0 80px;
   }
 
-  /* checkerboard motif — literal, not decorative-for-its-own-sake */
+  /* checkerboard motif */
   .hero::before{
     content: "";
     position: absolute;
@@ -250,7 +250,7 @@
     letter-spacing: 0.04em;
   }
 
-  /* ============ MOVE TICKER — signature element ============ */
+  /* ============ MOVE TICKER ============ */
   .move-ticker{
     overflow: hidden;
     white-space: nowrap;
@@ -284,7 +284,7 @@
   .section-head h2{ font-size: clamp(1.8rem, 3vw, 2.4rem); }
   .section-head p{ margin: 0; }
 
-  /* ---- Method / features ---- */
+  /* ---- features ---- */
   .features{
     display: flex;
     gap: 28px;
